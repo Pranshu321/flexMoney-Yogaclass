@@ -1,10 +1,17 @@
 import React from "react";
 import Payment from "./components/Payment";
 import Form from "./components/Form";
+import { Route, Routes } from "react-router-dom";
 
 const App = () => {
-  const [status, setStatus] = React.useState(true);
-  return <div>{status ? <Payment /> : <Form setStatus={setStatus} />}</div>;
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Form />} />
+        <Route path="/payment" element={<Payment />} />
+      </Routes>
+    </div>
+  );
 };
 
 export default App;

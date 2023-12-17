@@ -1,7 +1,9 @@
 import React from "react";
 import { Toaster, toast } from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
-const Form = ({ setStatus }) => {
+const Form = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = React.useState({
     firstName: "",
     lastName: "",
@@ -30,7 +32,7 @@ const Form = ({ setStatus }) => {
     fetch("http://localhost:5000/submit", {
       method: "POST",
       headers: {
-    "Content-Type": "application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         name: `${formData.firstName} ${formData.lastName}`,
@@ -39,10 +41,15 @@ const Form = ({ setStatus }) => {
         batch: formData.batch,
       }),
     })
-      .then((res) => {
+      .then(async (res) => {
+        const resj = await res.json();
+        if (resj.error === "User already exists") {
+          toast.error("User already exists");
+          return;
+        }
         if (res.ok) {
           toast.success("Form Submitted");
-          setTimeout(() => setStatus(true), 1000);
+          setTimeout(() => navigate("/payment"), 2000);
         } else {
           throw new Error(`HTTP error! Status: ${res.status}`);
         }
