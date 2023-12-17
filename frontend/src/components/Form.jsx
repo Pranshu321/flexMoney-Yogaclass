@@ -1,6 +1,7 @@
 import React from "react";
 import { Toaster, toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import emailjs from "emailjs-com";
 
 const Form = () => {
   const navigate = useNavigate();
@@ -11,6 +12,28 @@ const Form = () => {
     age: "",
     batch: "",
   });
+
+  function sendMail(email) {
+    emailjs
+      .send(
+        "service_6kpfmja",
+        "template_0dj02ca",
+        {
+          name: `${formData.firstName} ${formData.lastName}`,
+          email: email,
+          batch: formData.batch,
+        },
+        "M59Q72Ln2jOVV1krL"
+      )
+      .then(function (response) {
+        toast.success("Appointment Mail Sent !!");
+        setTimeout(() => navigate("/payment"), 2000);
+      })
+      .catch((err) => {
+        console.error(err);
+        toast.error("Internal Server Error OR Invalid Email");
+      });
+  }
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
@@ -48,8 +71,8 @@ const Form = () => {
           return;
         }
         if (res.ok) {
+          sendMail(formData.email);
           toast.success("Form Submitted");
-          setTimeout(() => navigate("/payment"), 2000);
         } else {
           throw new Error(`HTTP error! Status: ${res.status}`);
         }
