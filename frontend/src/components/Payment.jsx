@@ -10,7 +10,7 @@ const Payment = () => {
       toast.error("Please fill all the fields");
       return;
     }
-    fetch("http://localhost:5000/pay", {
+    fetch("https://flexmoney-backend-79ao.onrender.com/pay", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

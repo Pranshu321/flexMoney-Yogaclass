@@ -29,7 +29,7 @@ const Form = () => {
       toast.error("Age should be less than equal to 65");
       return;
     }
-    fetch("http://localhost:5000/submit", {
+    fetch("https://flexmoney-backend-79ao.onrender.com/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
