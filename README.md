@@ -26,6 +26,9 @@ Welcome to YogaClass, a dynamic and scalable web application designed to revolut
 ## ER Diagram
 ![image](https://github.com/Pranshu321/flexMoney-Yogaclass/assets/86917304/c8b207a1-5cb7-4249-8fd0-a53e271bbf21)
 
+## Demo Video
+Link of Video: https://www.loom.com/share/a961795d8c584b068c6722cf15516f97
+
 
 ## Screenshots
 
