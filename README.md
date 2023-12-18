@@ -1,6 +1,9 @@
 # FlexMoney - YogaClass
 Welcome to YogaClass, a dynamic and scalable web application designed to revolutionize the way yoga classes are managed and attended. This project leverages a powerful combination of modern web technologies to provide real-time responsiveness, seamless user experience, and robust scalability.
 
+- Frontend Deployed Link : https://flex-money-yogaclass.vercel.app/
+- Backend Deployed Link : https://flexmoney-backend-79ao.onrender.com/
+
 ## Tech Stack
 ### Frontend
 - React.js: The backbone of the website's structure.
