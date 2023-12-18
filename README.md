@@ -43,7 +43,8 @@ https://www.loom.com/share/a961795d8c584b068c6722cf15516f97
 ### Form Submission Successful
 ![image](https://github.com/Pranshu321/flexMoney-Yogaclass/assets/86917304/f673cf34-5133-4fd2-bbec-75e3d5bd68e1)
 
-![image](https://github.com/Pranshu321/flexMoney-Yogaclass/assets/86917304/4f1fa961-da26-4a54-a134-5c7704c09363)
+![image](https://github.com/Pranshu321/flexMoney-Yogaclass/assets/86917304/a4f88ffd-64ec-488f-99f0-ab3253db4b38)
+
 
 
 ### User Will get Successful Registration Mail with a payment link
@@ -54,6 +55,9 @@ https://www.loom.com/share/a961795d8c584b068c6722cf15516f97
 
 ### Payment Successful
 ![image](https://github.com/Pranshu321/flexMoney-Yogaclass/assets/86917304/adc34b38-961b-470f-8be9-7536afffef10)
+
+![image](https://github.com/Pranshu321/flexMoney-Yogaclass/assets/86917304/295574db-0db3-4f62-9b2b-85ea6e8f7c4d)
+
 
 ### If Payment Already Done
 ![image](https://github.com/Pranshu321/flexMoney-Yogaclass/assets/86917304/2392ce7a-827f-42fb-aa53-b4a398d328ff)
